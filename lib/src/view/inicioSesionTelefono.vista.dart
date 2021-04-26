@@ -21,8 +21,21 @@ class _InicioSesionTelefonoState extends State<InicioSesionTelefono> {
         body: SingleChildScrollView(
           child: Column(
             children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: height / 15),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back_ios),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ),
+                ],
+              ),
               Container(
-                margin: EdgeInsets.only(top: height / 7),
+                margin: EdgeInsets.only(top: height / 10),
                 child: Center(
                   child: Image(
                     image: AssetImage('assets/logo-texto.png'),
@@ -36,7 +49,7 @@ class _InicioSesionTelefonoState extends State<InicioSesionTelefono> {
                   child: Center(
                     child: TextField(
                       decoration: InputDecoration(
-                        hintText: 'Número de teléfono',
+                        hintText: 'Nombre',
                         hintStyle: TextStyle(
                           color: Colors.black,
                         ),
