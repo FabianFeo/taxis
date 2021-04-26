@@ -65,7 +65,9 @@ class _LoginState extends State<Login> {
                 child: BouncingWidget(
                   duration: Duration(milliseconds: 100),
                   scaleFactor: 1.5,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,MaterialPageRoute(builder: (context) =>RegistroTelefono()));
+                  },
                   child: Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50.0),
