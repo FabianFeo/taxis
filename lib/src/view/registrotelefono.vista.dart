@@ -1,14 +1,17 @@
 import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:taxis/src/view/codigoVerificacionRegistro.vista.dart';
 
-class RegistroTelefono extends StatefulWidget {
+class RegistroTelefono extends StatefulWidget {  
   RegistroTelefono({Key key}) : super(key: key);
 
   @override
   _RegistroTelefonoState createState() => _RegistroTelefonoState();
+  
 }
 
-class _RegistroTelefonoState extends State<RegistroTelefono> {
+
+class _RegistroTelefonoState extends State<RegistroTelefono> {  
   double height = 0;
   double width = 0;
   @override
@@ -33,13 +36,16 @@ class _RegistroTelefonoState extends State<RegistroTelefono> {
                   margin: EdgeInsets.only(top: height / 7),
                   width: width / 1.2,
                   child: Center(
-                    child: TextFormField(
+                    child: TextFormField(                      
+                      cursorColor: Color.fromRGBO(253, 213, 1, 1), 
                       decoration: new InputDecoration(
-                          labelText: "Enter Email",
-                          fillColor: Colors.white,
-                          border: new OutlineInputBorder(
+                          labelText: "Número de teléfono",
+                          fillColor: Colors.yellow,
+                          border: new OutlineInputBorder(                           
                             borderRadius: new BorderRadius.circular(25.0),
-                            borderSide: new BorderSide(),
+                            borderSide: new BorderSide(
+                              color: Color.fromRGBO(253, 213, 1, 1),
+                            ),                            
                           )),
                       onTap: () {},
                       onChanged: (text) {},
@@ -51,7 +57,12 @@ class _RegistroTelefonoState extends State<RegistroTelefono> {
                     child: BouncingWidget(
                       duration: Duration(milliseconds: 100),
                       scaleFactor: 1.5,
-                      onPressed: () {},
+                      onPressed: () {
+                         Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CodigoVerificacionRegistro()));
+                      },
                       child: Card(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50.0),

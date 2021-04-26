@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:taxis/src/view/inicioSesionHuella.vista.dart';
-import 'package:taxis/src/view/registrotelefono.vista.dart';
+import 'package:taxis/src/view/registroTelefono.vista.dart';
 import 'inicioSesionTelefono.vista.dart';
 
 class Login extends StatefulWidget {
