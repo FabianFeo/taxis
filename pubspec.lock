@@ -108,7 +108,7 @@ packages:
       name: pin_code_fields
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.1.0"
+    version: "7.0.0"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -171,5 +171,9 @@ packages:
     source: hosted
     version: "2.1.0"
 sdks:
+<<<<<<< HEAD
   dart: ">=2.12.0-0.0 <3.0.0"
   flutter: ">=1.22.0"
+=======
+  dart: ">=2.12.0 <3.0.0"
+>>>>>>> e569803ac89d1897e42d3036a18cab510dc04ab3

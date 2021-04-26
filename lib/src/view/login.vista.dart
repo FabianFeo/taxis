@@ -75,7 +75,7 @@ class _LoginState extends State<Login> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => InicioSesionHuella()));
+                                    builder: (context) => InicioSesionTelefono()));
                           },
                           child: Card(
                               shape: RoundedRectangleBorder(
