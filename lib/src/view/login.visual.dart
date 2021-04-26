@@ -3,6 +3,7 @@ import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:taxis/src/inicioSesionTelefono.vista.dart';
 import 'inicioSesionHuella.vista.dart';
 
+
 class Login extends StatefulWidget {
   Login({Key key}) : super(key: key);
 
@@ -28,52 +29,63 @@ class _LoginState extends State<Login> {
             ),
           ),
           Container(
-              margin: EdgeInsets.only(top: height / 40),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                      child: Center(
-                    child: BouncingWidget(
-                      duration: Duration(milliseconds: 100),
-                      scaleFactor: 1.5,
-                      onPressed: () {},
-                      child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(50.0),
+            margin: EdgeInsets.only(top: height / 40),
+            child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                  child: Center(
+                child: BouncingWidget(
+                  duration: Duration(milliseconds: 100),
+                  scaleFactor: 1.5,
+                  onPressed: () {
+                   Navigator.push(context,MaterialPageRoute(builder: (context) =>RegistroTelefono()));
+                  },
+                  child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50.0),
+                      ),
+                      color: Color.fromRGBO(253, 213, 1, 1),
+                      child: Container(
+                        width: width / 3,
+                        height: height / 20,
+                        child: Center(
+                          child: Text(
+                            "Registrate",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: height / 60),
                           ),
-                          color: Color.fromRGBO(253, 213, 1, 1),
-                          child: Container(
-                            width: width / 3,
-                            height: height / 20,
-                            child: Center(
-                              child: Text(
-                                "Registrate",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: height / 60),
-                              ),
-                            ),
-                          )),
-                    ),
-                  )),
-                  Container(
-                      child: Center(
-                    child: BouncingWidget(
-                      duration: Duration(milliseconds: 100),
-                      scaleFactor: 1.5,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => InicioSesionTelefono()),
-                        );
-                      },
-                      child: Card(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(50.0),
+                        ),
+                      )),
+                ),
+              )),
+               Container(
+                  child: Center(
+                child: BouncingWidget(
+                  duration: Duration(milliseconds: 100),
+                  scaleFactor: 1.5,
+                  onPressed: () {
+                    Navigator.push(context,MaterialPageRoute(builder: (context) =>RegistroTelefono()));
+                  },
+                  child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50.0),
+                      ),
+                      color: Color.fromRGBO(253, 213, 1, 1),
+                      child: Container(
+                        width: width / 3,
+                        height: height / 20,
+                        child: Center(
+                          child: Text(
+                            "Inicia sesión",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: height / 60),
                           ),
                           color: Color.fromRGBO(253, 213, 1, 1),
                           child: Container(
