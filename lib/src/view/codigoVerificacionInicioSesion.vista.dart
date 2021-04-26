@@ -1,7 +1,8 @@
 import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:taxis/src/DatosPersonalInicioSesion.vista.dart';
+import 'DatosPersonalInicioSesion.vista.dart';
+
 
 class CodigoVerificacionInicioSesion extends StatefulWidget {
   CodigoVerificacionInicioSesion({Key key}) : super(key: key);
