@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:bouncing_widget/bouncing_widget.dart';
-import 'package:taxis/src/view/registrotelefono.vista.dart';
+import 'package:taxis/src/inicioSesionTelefono.vista.dart';
+import 'inicioSesionHuella.vista.dart';
+
 
 class Login extends StatefulWidget {
   Login({Key key}) : super(key: key);
@@ -85,13 +87,26 @@ class _LoginState extends State<Login> {
                                 fontWeight: FontWeight.bold,
                                 fontSize: height / 60),
                           ),
-                        ),
-                      )),
-                ),
-              )),
-            ],
-          )
-          )],
+                          color: Color.fromRGBO(253, 213, 1, 1),
+                          child: Container(
+                            width: width / 3,
+                            height: height / 20,
+                            child: Center(
+                              child: Text(
+                                "Inicia sesión",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: height / 60),
+                              ),
+                            ),
+                          )),
+                    ),
+                  )),
+                ],
+              ))
+        ],
       ),
     );
   }
