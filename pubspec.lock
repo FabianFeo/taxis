@@ -74,13 +74,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_verification_code:
-    dependency: "direct main"
-    description:
-      name: flutter_verification_code
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.1"
   matcher:
     dependency: transitive
     description:
@@ -171,9 +164,4 @@ packages:
     source: hosted
     version: "2.1.0"
 sdks:
-<<<<<<< HEAD
-  dart: ">=2.12.0-0.0 <3.0.0"
-  flutter: ">=1.22.0"
-=======
   dart: ">=2.12.0 <3.0.0"
->>>>>>> e569803ac89d1897e42d3036a18cab510dc04ab3

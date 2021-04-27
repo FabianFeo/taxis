@@ -56,6 +56,13 @@ flutter:
    - assets/logo-sombra.png
    - assets/logo-texto.png
    - assets/logo.png
+   - assets/icono-huella.png
+   - assets/icono-mapa.png
+   - assets/icono-mapa-grande.png
+   - assets/ICONOS/Casa_4.png
+   - assets/ICONOS/Fav_4.png
+   - assets/ICONOS/Trabajo_4.png
+   - assets/viaje-activo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

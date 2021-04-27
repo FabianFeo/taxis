@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:bouncing_widget/bouncing_widget.dart';
+import 'package:taxis/src/view/mapaUsuario.vista.dart';
 
 class InicioSesionHuella extends StatefulWidget {
   InicioSesionHuella({Key key}) : super(key: key);
@@ -34,7 +35,7 @@ class _InicioSesionHuellaState extends State<InicioSesionHuella> {
               Container(
                 margin: EdgeInsets.only(top: height / 9, bottom: height / 9),
                 child: Image(
-                  image: AssetImage('assets/logo-texto.png'),
+                  image: AssetImage('assets/icono-huella.png'),
                   width: 150,
                 ),
               ),
@@ -43,7 +44,12 @@ class _InicioSesionHuellaState extends State<InicioSesionHuella> {
                 child: BouncingWidget(
                   duration: Duration(milliseconds: 100),
                   scaleFactor: 1.5,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MapaPageUser()));
+                  },
                   child: Card(
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50.0),

@@ -1,5 +1,6 @@
 import 'package:bouncing_widget/bouncing_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:taxis/src/view/inicioSesionHuella.vista.dart';
 
 class DatosPersonalInicioSesion extends StatefulWidget {
   DatosPersonalInicioSesion({Key key}) : super(key: key);
@@ -114,7 +115,12 @@ class _DatosPersonalInicioSesionState extends State<DatosPersonalInicioSesion> {
                     child: BouncingWidget(
                       duration: Duration(milliseconds: 100),
                       scaleFactor: 1.5,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => InicioSesionHuella()));
+                      },
                       child: Card(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(50.0),
