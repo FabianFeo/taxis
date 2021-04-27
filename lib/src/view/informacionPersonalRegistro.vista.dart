@@ -22,8 +22,21 @@ class _DatosPersonalRegistroState extends State<DatosPersonalRegistro> {
         child: Center(
           child: Column(
             children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: height / 20),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back_ios),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ),
+                ],
+              ),
               Container(
-                margin: EdgeInsets.only(top: height / 40),
+                margin: EdgeInsets.only(top: height / 60),
                 child: Center(
                   child: Image(
                     image: AssetImage('assets/logo-texto.png'),
@@ -109,7 +122,7 @@ class _DatosPersonalRegistroState extends State<DatosPersonalRegistro> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: height / 10),
+                margin: EdgeInsets.only(top: height / 20),
                   child: Center(
                 child: BouncingWidget(
                   duration: Duration(milliseconds: 100),

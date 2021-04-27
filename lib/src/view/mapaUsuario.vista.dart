@@ -21,8 +21,21 @@ class _MapaPageUserState extends State<MapaPageUser> {
         child: Center(
           child: Column(
             children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: height / 20),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back_ios),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ),
+                ],
+              ),
               Container(
-                margin: EdgeInsets.only(top: height / 15),
+                margin: EdgeInsets.only(top: height / 20),
                 width: width / 1.2,
                 child: TextField(
                   decoration: InputDecoration(

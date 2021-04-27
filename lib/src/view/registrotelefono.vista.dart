@@ -23,8 +23,21 @@ class _RegistroTelefonoState extends State<RegistroTelefono> {
         body: SingleChildScrollView(
           child: Column(
             children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: height / 15),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back_ios),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ),
+                ],
+              ),
               Container(
-                margin: EdgeInsets.only(top: height / 7),
+                margin: EdgeInsets.only(top: height / 10),
                 child: Center(
                   child: Image(
                     image: AssetImage('assets/logo-texto.png'),

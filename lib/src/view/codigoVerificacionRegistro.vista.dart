@@ -28,8 +28,21 @@ class _CodigoVerificacionRegistroState
       backgroundColor: Colors.white,
       body: Stack(
         children: [
+          Row(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top: height / 20),
+                child: IconButton(
+                  icon: Icon(Icons.arrow_back_ios),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ),
+            ],
+          ),
           Container(
-             margin: EdgeInsets.only(top: height/1.2),
+              margin: EdgeInsets.only(top: height / 1.2),
               child: Center(
                 child: BouncingWidget(
                   duration: Duration(milliseconds: 100),
@@ -38,8 +51,7 @@ class _CodigoVerificacionRegistroState
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) =>
-                                DatosPersonalRegistro()));
+                            builder: (context) => DatosPersonalRegistro()));
                   },
                   child: Card(
                       shape: RoundedRectangleBorder(
@@ -63,7 +75,7 @@ class _CodigoVerificacionRegistroState
                 ),
               )),
           Container(
-            margin: EdgeInsets.only(bottom: height/1.5),
+            margin: EdgeInsets.only(bottom: height / 1.5),
             child: Center(
               child: Image(
                 image: AssetImage('assets/logo-texto.png'),
@@ -71,9 +83,9 @@ class _CodigoVerificacionRegistroState
               ),
             ),
           ),
-           Container(
-             margin: EdgeInsets.only(bottom: height / 2.5),
-                  child: Center(
+          Container(
+              margin: EdgeInsets.only(bottom: height / 2.5),
+              child: Center(
                 child: Text(
                   'Código de verificación',
                   textAlign: TextAlign.center,
@@ -84,8 +96,8 @@ class _CodigoVerificacionRegistroState
                   ),
                 ),
               )),
-          Container(  
-            margin: EdgeInsets.only(top: height / 5),          
+          Container(
+            margin: EdgeInsets.only(top: height / 5),
             child: Center(
               child: Image(
                 image: AssetImage('assets/fondo-2.png'),
@@ -94,45 +106,45 @@ class _CodigoVerificacionRegistroState
             ),
           ),
           Container(
-                margin: EdgeInsets.only(top: height / 1.87, left: width / 22, right: width / 22),
-                child: PinCodeTextField(
-                  length: 6,
-                  obscureText: false,
-                  animationType: AnimationType.fade,
-                  pinTheme: PinTheme(
-                    shape: PinCodeFieldShape.box,
-                    borderRadius: BorderRadius.circular(5),
-                    inactiveFillColor: Colors.white,
-                    inactiveColor: Colors.black,
-                    fieldHeight: 50,
-                    fieldWidth: 40,
-                    selectedColor: Color.fromRGBO(253, 213, 1, 1),
-                    selectedFillColor: Colors.white,
-                    activeColor: Color.fromRGBO(253, 213, 1, 1),
-                    activeFillColor: Colors.white,
-                  ),
-                  animationDuration: Duration(milliseconds: 300),
-                  backgroundColor: Colors.transparent,
-                  enableActiveFill: true,
-                  errorAnimationController: errorController,
-                  controller: textEditingController,
-                  onCompleted: (v) {
-                    print("Completed");
-                  },
-                  onChanged: (value) {
-                    print(value);
-                    setState(() {});
-                  },
-                  beforeTextPaste: (text) {
-                    print("Allowing to paste $text");
-                    //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
-                    //but you can show anything you want here, like your pop up saying wrong paste format or etc
-                    return true;
-                  },
-                  appContext: context,
-                ),
+            margin: EdgeInsets.only(
+                top: height / 1.87, left: width / 22, right: width / 22),
+            child: PinCodeTextField(
+              length: 6,
+              obscureText: false,
+              animationType: AnimationType.fade,
+              pinTheme: PinTheme(
+                shape: PinCodeFieldShape.box,
+                borderRadius: BorderRadius.circular(5),
+                inactiveFillColor: Colors.white,
+                inactiveColor: Colors.black,
+                fieldHeight: 50,
+                fieldWidth: 40,
+                selectedColor: Color.fromRGBO(253, 213, 1, 1),
+                selectedFillColor: Colors.white,
+                activeColor: Color.fromRGBO(253, 213, 1, 1),
+                activeFillColor: Colors.white,
               ),
-
+              animationDuration: Duration(milliseconds: 300),
+              backgroundColor: Colors.transparent,
+              enableActiveFill: true,
+              errorAnimationController: errorController,
+              controller: textEditingController,
+              onCompleted: (v) {
+                print("Completed");
+              },
+              onChanged: (value) {
+                print(value);
+                setState(() {});
+              },
+              beforeTextPaste: (text) {
+                print("Allowing to paste $text");
+                //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
+                //but you can show anything you want here, like your pop up saying wrong paste format or etc
+                return true;
+              },
+              appContext: context,
+            ),
+          ),
         ],
       ),
     );
