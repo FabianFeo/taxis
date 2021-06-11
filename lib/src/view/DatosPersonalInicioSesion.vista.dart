@@ -45,6 +45,19 @@ class _DatosPersonalInicioSesionState extends State<DatosPersonalInicioSesion> {
                   ),
                 ),
               ),
+               Container(
+                  margin: EdgeInsets.only(top: height / 40),
+                  child: Center(
+                    child: Text(
+                      'Nice-Cab',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: height / 30,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  )),
               Container(
                   margin: EdgeInsets.only(top: height / 40),
                   child: Center(

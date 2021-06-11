@@ -83,6 +83,7 @@ class _CodigoVerificacionRegistroState
               ),
             ),
           ),
+          
           Container(
               margin: EdgeInsets.only(bottom: height / 2.5),
               child: Center(

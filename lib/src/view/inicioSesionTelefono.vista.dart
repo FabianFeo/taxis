@@ -43,6 +43,19 @@ class _InicioSesionTelefonoState extends State<InicioSesionTelefono> {
                   ),
                 ),
               ),
+                Container(
+                  margin: EdgeInsets.only(top: height / 40),
+                  child: Center(
+                    child: Text(
+                      'Nice-Cab',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: height / 30,
+                        color: Colors.black,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  )),
               Container(
                   margin: EdgeInsets.only(top: height / 15),
                   width: width / 1.2,
