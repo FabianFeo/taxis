@@ -24,7 +24,7 @@ class _InicioSesionHuellaState extends State<InicioSesionHuella> {
               Container(
                 margin: EdgeInsets.only(top: height / 9),
                 child: Image(
-                  image: AssetImage('assets/logo-texto.png'),
+                  image: AssetImage('assets/logo-sombra.png'),
                   width: 150,
                 ),
               ),

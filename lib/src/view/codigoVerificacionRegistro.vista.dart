@@ -66,7 +66,7 @@ class _CodigoVerificacionRegistroState
             margin: EdgeInsets.only(bottom: height/1.5),
             child: Center(
               child: Image(
-                image: AssetImage('assets/logo-texto.png'),
+                image: AssetImage('assets/logo-sombra.png'),
                 height: height / 5,
               ),
             ),

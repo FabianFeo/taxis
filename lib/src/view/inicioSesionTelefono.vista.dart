@@ -38,7 +38,7 @@ class _InicioSesionTelefonoState extends State<InicioSesionTelefono> {
                 margin: EdgeInsets.only(top: height / 10),
                 child: Center(
                   child: Image(
-                    image: AssetImage('assets/logo-texto.png'),
+                    image: AssetImage('assets/logo-sombra.png'),
                     height: height / 3,
                   ),
                 ),

@@ -27,7 +27,7 @@ class _DatosPersonalInicioSesionState extends State<DatosPersonalInicioSesion> {
                 margin: EdgeInsets.only(top: height / 40),
                 child: Center(
                   child: Image(
-                    image: AssetImage('assets/logo-texto.png'),
+                    image: AssetImage('assets/logo-sombra.png'),
                     height: height / 5,
                   ),
                 ),
