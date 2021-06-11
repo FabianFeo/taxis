@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'DatosPersonalInicioSesion.vista.dart';
 
-
 class CodigoVerificacionInicioSesion extends StatefulWidget {
   CodigoVerificacionInicioSesion({Key key}) : super(key: key);
 
@@ -29,6 +28,19 @@ class _CodigoVerificacionInicioSesionState
       backgroundColor: Colors.white,
       body: Stack(
         children: [
+          Row(
+            children: <Widget>[
+              Container(
+                margin: EdgeInsets.only(top: height / 20),
+                child: IconButton(
+                  icon: Icon(Icons.arrow_back_ios),
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                ),
+              ),
+            ],
+          ),
           Container(
               margin: EdgeInsets.only(top: height / 1.2),
               child: Center(

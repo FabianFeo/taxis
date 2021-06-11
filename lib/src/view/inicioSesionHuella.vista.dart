@@ -21,8 +21,21 @@ class _InicioSesionHuellaState extends State<InicioSesionHuella> {
         body: SingleChildScrollView(
           child: Column(
             children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: height / 15),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back_ios),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ),
+                ],
+              ),
               Container(
-                margin: EdgeInsets.only(top: height / 9),
+                margin: EdgeInsets.only(top: height / 20),
                 child: Image(
                   image: AssetImage('assets/logo-sombra.png'),
                   width: 150,

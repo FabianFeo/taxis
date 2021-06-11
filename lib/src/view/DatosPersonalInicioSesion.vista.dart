@@ -23,6 +23,19 @@ class _DatosPersonalInicioSesionState extends State<DatosPersonalInicioSesion> {
         child: Center(
           child: Column(
             children: [
+              Row(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(top: height / 20),
+                    child: IconButton(
+                      icon: Icon(Icons.arrow_back_ios),
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ),
+                ],
+              ),
               Container(
                 margin: EdgeInsets.only(top: height / 40),
                 child: Center(
@@ -110,7 +123,7 @@ class _DatosPersonalInicioSesionState extends State<DatosPersonalInicioSesion> {
                 ),
               ),
               Container(
-                  margin: EdgeInsets.only(top: height / 10),
+                  margin: EdgeInsets.only(top: height / 15),
                   child: Center(
                     child: BouncingWidget(
                       duration: Duration(milliseconds: 100),
